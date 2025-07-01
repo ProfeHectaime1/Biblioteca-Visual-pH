@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlackHoleTransform</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      text-align: center;
+    }
+    .gif {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .gif img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+    .section {
+      margin-top: 2rem;
+      line-height: 1.6;
+    }
+    .section h2 {
+      font-size: 1.5rem;
+      color: #ffb347;
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      text-align: left;
+    }
+    a.back {
+      display: block;
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+      color: #888;
+      text-decoration: none;
+    }
+    a.back:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>BlackHoleTransform</h1>
+
+  <div class="gif">
+    <img src="gifs/720/BlackHoleTransform.gif" alt="BlackHoleTransform">
+  </div>
+
+  <div class="section">
+    <h2>¿Qué hace?</h2>
+    <p>Aspira al primer mobject/grupo y luego lo transforma con una gran sacudida en el siguiente.</p>
+  </div>
+
+  <div class="section">
+    <h2>Parámetros principales</h2>
+    <ul>
+      <li><em>vgrp1</em> (<em>mobject</em>): Mobject/VGroup a transformar.</li>
+      <li><em>vgrp2</em> (<em>mobject</em>): Mobject/VGroup en que se transforma.</li>
+      <li><em>cam</em> (<em>Camera</em>): Referencia de la cámara para posicionar las rotaciones.</li>
+      <li><em>preset</em> (<em>int</em>): Determina cómo se manejan las copias adicionales:
+        <ul>
+          <li><strong>0</strong>: Transformación uno a uno con copias individuales de cada elemento.</li>
+          <li><strong>1</strong>: Transformación uno a uno en la que cada copia es el objeto original completo (no se subdivide).</li>
+        </ul>
+      </li>
+      <li><em>lag</em> (<em>float</em>): Retardo temporal entre animaciones sucesivas.</li>
+      <li><em>scale</em> (<em>float</em>): Lo pequeño que se hacen los submobjects del primero.</li>
+      <li><em>seed</em> (<em>int</em>): Semilla que se usa para tomar los datos aleatorios.</li>
+      <li><em>debug</em> (<em>bool</em>): Si se requiere información de qué está pasando en la animación.</li>
+    </ul>
+  </div>
+
+  <a class="back" href="../Transformations.html">← Volver a la biblioteca</a>
+</body>
+</html>

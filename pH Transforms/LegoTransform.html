@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LegoTransform</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      text-align: center;
+    }
+    .gif {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .gif img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+    .section {
+      margin-top: 2rem;
+      line-height: 1.6;
+    }
+    .section h2 {
+      font-size: 1.5rem;
+      color: #ffb347;
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      text-align: left;
+    }
+    a.back {
+      display: block;
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+      color: #888;
+      text-decoration: none;
+    }
+    a.back:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>LegoTransform</h1>
+
+  <div class="gif">
+    <img src="gifs/720/LegoTransform.gif" alt="LegoTransform">
+  </div>
+
+  <div class="section">
+    <h2>¿Qué hace?</h2>
+    <p>Transforma un objeto o grupo en otro, simulando una descomposición tipo lego y reconstrucción con bloques.</p>
+  </div>
+
+  <div class="section">
+    <h2>Parámetros principales</h2>
+    <ul>
+      <li><em>vgrp1</em> (<em>mobject</em>): Mobject/VGroup inicial que se transformará.</li>
+      <li><em>vgrp2</em> (<em>mobject</em>): Mobject/VGroup final que se formará a partir de bloques.</li>
+      <li><em>nrows</em>, <em>ncols</em> (<em>int</em>): Divisiones horizontales y verticales del objeto a transformar (como piezas de lego).</li>
+      <li><em>debug</em> (<em>bool</em>): Si es True, se mostrarán los contornos de los bloques y cálculo de subdivisiones.</li>
+      <li><em>lag</em> (<em>float</em>): Tiempo de retardo entre la salida de los bloques del primer objeto y la aparición del segundo.</li>
+      <li><em>**kwargs</em>: Argumentos adicionales compatibles con <em>default_args</em>.</li>
+    </ul>
+  </div>
+
+  <a class="back" href="../Transformations.html">← Volver a la biblioteca</a>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InvertedTransform</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      text-align: center;
+    }
+    .gif {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .gif img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+    .section {
+      margin-top: 2rem;
+      line-height: 1.6;
+    }
+    .section h2 {
+      font-size: 1.5rem;
+      color: #ffb347;
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      text-align: left;
+    }
+    a.back {
+      display: block;
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+      color: #888;
+      text-decoration: none;
+    }
+    a.back:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>InvertedTransform</h1>
+
+  <div class="gif">
+    <img src="gifs/720/InvertedTransform.gif" alt="InvertedTransform">
+  </div>
+
+  <div class="section">
+    <h2>¿Qué hace?</h2>
+    <p>Desaparece con un <em>FadeOut()</em> y reaparece con un <em>FadeIn()</em> submobject a submobject.</p>
+  </div>
+
+  <div class="section">
+    <h2>Parámetros principales</h2>
+    <ul>
+      <li><em>vgrp1</em> (<em>VGroup o Mobject</em>): Objeto o grupo de objetos que se eliminarán de la escena mediante una animación invertida personalizada (<code>InvertedFadeOut</code>).</li>
+      <li><em>vgrp2</em> (<em>VGroup o Mobject</em>): Objeto o grupo de objetos que aparecerán en la escena mediante una animación invertida personalizada (<code>InvertedFadeIn</code>).</li>
+      <li><em>preset</em> (<em>int</em>): Selecciona la variante del efecto de entrada:
+        <ul>
+          <li><strong>0</strong>: Usa <code>InvertedFadeIn</code> (los submobjects entran desde arriba o abajo).</li>
+          <li><strong>1</strong>: Usa <code>InvertedFadeIn2</code> (entran desde arriba, abajo, izquierda y derecha).</li>
+          <li><strong>2</strong>: Usa <code>InvertedFadeIn3</code> (entran desde cualquier ángulo).</li>
+        </ul>
+      </li>
+      <li><em>lag</em> (<em>float</em>): Retardo entre la animación de salida (<code>vgrp1</code>) y la de entrada (<code>vgrp2</code>).</li>
+      <li><em>debug</em> (<em>bool</em>): Si es True, activa la salida de información adicional para depuración en ambas animaciones.</li>
+    </ul>
+  </div>
+
+  <a class="back" href="../Transformations.html">← Volver a la biblioteca</a>
+</body>
+</html>

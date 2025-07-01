@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeometricTransform</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      text-align: center;
+    }
+    .gif {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .gif img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+    .section {
+      margin-top: 2rem;
+      line-height: 1.6;
+    }
+    .section h2 {
+      font-size: 1.5rem;
+      color: #ffb347;
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      text-align: left;
+    }
+    a.back {
+      display: block;
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+      color: #888;
+      text-decoration: none;
+    }
+    a.back:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>GeometricTransform</h1>
+
+  <div class="gif">
+    <img src="gifs/720/GeometricTransform.gif" alt="GeometricTransform">
+  </div>
+
+  <div class="section">
+    <h2>¿Qué hace?</h2>
+    <p>Transforma primero a una forma geométrica que se proporciona como entrada y luego se transforma al otro.</p>
+  </div>
+
+  <div class="section">
+    <h2>Parámetros principales</h2>
+    <ul>
+      <li><em>vgrp1</em> (<em>mobject</em>): Mobject/VGroup a transformar.</li>
+      <li><em>vgrp2</em> (<em>mobject</em>): Mobject/VGroup en que se transforma.</li>
+      <li><em>cam</em> (<em>Camera</em>): Referencia de la cámara para posicionar las rotaciones.</li>
+      <li><em>geometry</em> (<em>Vmobject</em>): Determina la geometría en que se va a transformar antes de llegar a la final. Se puede mandar cualquier objeto en realidad, incluso un texto.</li>
+      <li><em>preset1</em> (<em>int o string</em>): Método para transformar <em>vgrp1</em> en la geometría.</li>
+      <li><em>preset2</em> (<em>int o string</em>): Método para transformar la geometría en <em>vgrp2</em>.</li>
+      <li><em>scale_factor</em> (<em>int</em>): Escala de la geometría.</li>
+      <li><em>color</em> (<em>ManimColor</em>): Color de la geometría.</li>
+      <li><em>margin</em> (<em>float</em>): Margen con el borde de la cámara para que no se salga de esta.</li>
+      <li><em>opacity</em> (<em>float</em> de 0 a 1): Opacidad de la geometría. Imprescindible para que se vean los textos y rellenos.</li>
+      <li><em>**kwargs</em>: argumentos adicionales de <em>default_args</em> (<em>debug</em>, <em>lag</em>, <em>cam</em>, <em>sound</em>, <em>seed</em>, <em>soff</em>, <em>divide</em>, <em>option</em>, <em>nos</em>).</li>
+    </ul>
+  </div>
+
+  <a class="back" href="../Transformations.html">← Volver a la biblioteca</a>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RotateTransform</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+    .gif {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .gif img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+    .section {
+      margin-top: 2rem;
+      line-height: 1.6;
+    }
+    .section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #ffb347;
+    }
+    a.back {
+      display: block;
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+      color: #888;
+      text-decoration: none;
+    }
+    a.back:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>RotateTransform</h1>
+
+  <div class="gif">
+    <img src="gifs/720/RotateTransform.gif" alt="RotateTransform" />
+  </div>
+
+  <div class="section">
+    <h2>¿Qué hace?</h2>
+    <p>Transforma realizando rotaciones individuales a cada submobject.</p>
+  </div>
+
+  <div class="section">
+    <h2>Parámetros principales</h2>
+    <ul>
+      <li><strong><em>vgrp1</em></strong> (<em>Mobject</em>): <em>Mobject</em>/<em>VGroup</em> a transformar.</li>
+      <li><strong><em>vgrp2</em></strong> (<em>Mobject</em>): <em>Mobject</em>/<em>VGroup</em> en que se transforma.</li>
+      <li><em>laps</em> (int, por defecto 2): Número de rotaciones completas que realiza cada objeto.</li>
+      <li>
+        <em>option</em> (int, por defecto 0): Determina cómo se copian los elementos adicionales:
+        <ul>
+          <li><strong>0</strong>: Copia los elementos individuales de <em>vgrp1</em>.</li>
+          <li><strong>1</strong>: Duplica todo el <em>vgrp1</em>.</li>
+        </ul>
+      </li>
+      <li><em>margin</em> (<em>float</em>, por defecto 4.0): Define la región en la que los objetos pueden rotar.</li>
+      <li><strong>**kwargs</strong>: argumentos adicionales de <a href="#">default_args</a> (<em>debug</em>, <em>lag</em> (por defecto <em>0.03</em>), <em>cam</em>, <em>sound</em>, <em>seed</em>, <em>divide</em>, <em>option</em>, <em>nos</em>).</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Ejemplo en código</h2>
+    <pre><code>
+RotateTransform(
+    text1,
+    text2,
+    laps=3,
+    lag=0.03,
+    option=0
+)
+    </code></pre>
+  </div>
+
+  <a class="back" href="../Transformations.html">← Volver a la biblioteca</a>
+</body>
+</html>

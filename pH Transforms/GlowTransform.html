@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlowTransform</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      text-align: center;
+    }
+    .gif {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .gif img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+    .section {
+      margin-top: 2rem;
+      line-height: 1.6;
+    }
+    .section h2 {
+      font-size: 1.5rem;
+      color: #ffb347;
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      text-align: left;
+    }
+    a.back {
+      display: block;
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+      color: #888;
+      text-decoration: none;
+    }
+    a.back:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>GlowTransform</h1>
+
+  <div class="gif">
+    <img src="gifs/720/GlowTransform.gif" alt="GlowTransform">
+  </div>
+
+  <div class="section">
+    <h2>¿Qué hace?</h2>
+    <p>Transformación que combina efectos de luz o "brillo" para realzar el cambio entre objetos. Suele usarse como una versión visualmente llamativa de <em>SortedTransform</em> o <em>ReplacementTransform</em>.</p>
+  </div>
+
+  <div class="section">
+    <h2>Parámetros principales</h2>
+    <ul>
+      <li><em>vgrp1</em> (<em>Mobject</em>): Mobject/VGroup a transformar.</li>
+      <li><em>vgrp2</em> (<em>Mobject</em>): Mobject/VGroup en que se transforma.</li>
+      <li><em>color</em> (<em>Color</em>): Color del efecto glow o brillo durante la transformación.</li>
+      <li><em>intensity</em> (<em>float</em>): Intensidad del efecto de luz (recomendado: entre 0.1 y 1.0).</li>
+      <li><em>lag</em> (<em>float</em>): Retardo entre transformaciones parciales.</li>
+      <li><em>debug</em> (<em>bool</em>): Activa modo depuración para visualizar detalles.</li>
+      <li><em>**kwargs</em>: Argumentos adicionales compatibles con <em>default_args</em>.</li>
+    </ul>
+  </div>
+
+  <a class="back" href="../Transformations.html">← Volver a la biblioteca</a>
+</body>
+</html>
